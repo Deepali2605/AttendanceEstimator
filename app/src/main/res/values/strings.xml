@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Attendence Estimator</string>
+    <string name="hint_tl">Enter Total no of lectures</string>_
+    <string name="hint_pl">Enter no of lectures attended</string>
+    <string name="hint_al">Enter Absent lectures</string>
+    <string name="hint_tl1">Enter Total no of lectures</string>_
+    <string name="hint_pl1">Enter no of lectures attended</string>
+    <string name="hint_al1">Enter Absent lectures</string>
+
+</resources>

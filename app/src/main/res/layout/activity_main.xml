@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fbfb"
+    android:gravity="left"
+    android:orientation="vertical"
+    tools:context=".MainActivity2">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="15dp"
+        android:elevation="3dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginStart="17dp"
+        android:layout_marginEnd="17dp"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <EditText
+
+                android:id="@+id/edtlecture"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="17dp"
+                android:inputType="number"
+                android:layout_marginEnd="17dp"
+                android:layout_marginBottom="17dp"
+                android:hint="Total Lectures" />
+
+            <EditText
+                android:layout_below="@id/edtlecture"
+                android:id="@+id/edtpresent"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="17dp"
+                android:inputType="number"
+                android:hint="Lectures Attended"/>
+
+            <EditText
+                android:id="@+id/edtabsent"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/edtpresent"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="17dp"
+                android:inputType="number"
+                android:layout_marginEnd="17dp"
+                android:layout_marginBottom="17dp"
+                android:hint="Total Absent" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="15dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginStart="17dp"
+        android:elevation="3dp"
+        android:layout_marginEnd="17dp"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Result will appear here"
+                android:textStyle="italic"
+                android:gravity="center"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"
+                />
+            <TextView
+                android:id="@+id/txtResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="17dp"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                />
+
+            <TextView
+                android:id="@+id/txtRemaining"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="17dp"
+                android:text=""
+                android:backgroundTint="@color/white"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                />
+
+
+            <TextView
+                android:id="@+id/txtheld"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="17dp"
+                android:text=""
+                android:backgroundTint="@color/white"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                />
+
+            <TextView
+                android:id="@+id/txtcoming"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="17dp"
+                android:text=""
+                android:backgroundTint="@color/white"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                />
+
+            <TextView
+                android:id="@+id/txtsuggestion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="17dp"
+                android:text=""
+                android:textColor="@color/black"
+                android:backgroundTint="@color/white"
+                android:textSize="25sp"
+                />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <Button
+        android:id="@+id/calResult"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:elevation="2dp"
+        android:textColor="@color/white"
+        android:text="Get Result"
+        android:backgroundTint="@color/purple_500"
+        android:layout_marginBottom="50dp"/>
+
+    <Button
+        android:id="@+id/page1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/purple_500"
+        android:text="Next Page" />
+
+</RelativeLayout>
+
+
+
+
